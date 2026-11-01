@@ -2,7 +2,7 @@
 
 A GitHub Action to rerun the failed jobs of a finished workflow run when every failure is marked as retryable, such as a transient network error or a busy shared resource.
 
-A step marks a failure as retryable by writing an error annotation whose title is one of the `markers`:
+A step marks a failure as retryable by writing an annotation (error, warning or notice) whose title is one of the `markers`:
 
 ```bash
 echo "::error title=transient-failure::Download timed out"
